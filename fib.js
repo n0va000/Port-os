@@ -1,13 +1,12 @@
-function generateFibonacci(n) {
-  const fibonacci = [0, 1];
-  
-  for (let i = 2; i < n; i++) {
-    fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-  }
-  
-  return fibonacci;
+function fibonacci(n) {
+  if (n <= 0) return [];
+  if (n === 1) return [0];
+  if (n === 2) return [0, 1];
+
+  const previousFib = fibonacci(n - 1);
+  const nextFib = previousFib[n - 2] + previousFib[n - 3];
+  previousFib.push(nextFib);
+
+  return previousFib;
 }
-
-
-const fibonacciSequence = generateFibonacci(10);
-consoleOutput(fibonacciSequence);
+consoleOutput(fibonacci(10););
