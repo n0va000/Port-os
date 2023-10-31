@@ -9,4 +9,4 @@ function fibonacci(n) {
 
   return previousFib;
 }
-consoleOutput(fibonacci(10););
+displayOutput(fibonacci(10););
