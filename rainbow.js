@@ -1,0 +1,7 @@
+displayOutput("C","red",false)
+displayOutput("o","orange",false)
+displayOutput("l","yellow",false)
+displayOutput("o","green",false)
+displayOutput("u","blue",false)
+displayOutput("r","indigo",false)
+displayOutput("s","violet")
